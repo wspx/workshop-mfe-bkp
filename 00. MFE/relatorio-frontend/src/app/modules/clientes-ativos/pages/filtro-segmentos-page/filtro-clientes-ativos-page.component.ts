@@ -8,6 +8,7 @@ import { User } from '../../../../shared/services/models/user.type';
 @Component({
   selector: 'mfe-relatorio-filtro-clientes-ativos-page',
   templateUrl: './filtro-clientes-ativos-page.component.html',
+  styleUrl: './filtro-clientes-ativos-page.component.scss'
 })
 export class FiltroClientesAtivosPageComponent implements OnInit {
 
