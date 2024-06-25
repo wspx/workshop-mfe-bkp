@@ -12,12 +12,12 @@ export const routes: Routes = [
     loadChildren: () => import('./modules/dashboard/dashboard.module').then(m => m.DashboardModule)
   },
   {
-    path: 'produtos',
-    loadChildren: () => import('./modules/produtos/produtos.module').then(m => m.ProdutosModule)
+    path: 'vendedores',
+    loadChildren: () => import('./modules/vendedores/vendedores.module').then(m => m.VendedoresModule)
   },
   {
-    path: 'segmentos',
-    loadChildren: () => import('./modules/segmentos/segmentos.module').then(m => m.SegmentosModule)
+    path: 'clientes-ativos',
+    loadChildren: () => import('./modules/clientes-ativos/clientes-ativos.module').then(m => m.ClientesAtivosModule)
   },
   {
     path: '**',

@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Todo } from './models/todo.type';
-import { Comment } from './models/comments.type';
+import { Post } from './models/post.type';
+import { User } from './models/user.type';
 
 @Injectable({ providedIn: 'root' })
 export class JsonPlaceholderService {
@@ -13,11 +13,11 @@ export class JsonPlaceholderService {
   ) { }
 
 
-  public getAllTodos() {
-    return this.http.get<Todo[]>(`${this.URL_BASE}/posts`);
+  public getAllPosts() {
+    return this.http.get<Post[]>(`${this.URL_BASE}/posts`);
   }
 
-  public getAllComments() {
-    return this.http.get<Comment[]>(`${this.URL_BASE}/comments`);
+  public getAllUsers() {
+    return this.http.get<User[]>(`${this.URL_BASE}/users`);
   }
 }

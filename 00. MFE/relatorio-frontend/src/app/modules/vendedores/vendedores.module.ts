@@ -3,18 +3,18 @@ import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
-import { ProdutosRoutingModule } from './produtos-routing.module';
-import { FiltroProdutosPageComponent } from './pages/filtro-produtos-page/filtro-produtos-page.component';
+import { VendedoresRoutingModule } from './vendedores-routing.module';
+import { FiltroVendedoresPageComponent } from './pages/filtro-vendedores-page/filtro-vendedores-page.component';
 
 import { TableModule } from 'primeng/table';
 import { JsonPlaceholderService } from '../../shared/services/jsonplaceholder.service';
 
 @NgModule({
   declarations: [
-    FiltroProdutosPageComponent,
+    FiltroVendedoresPageComponent,
   ],
   imports: [
-    ProdutosRoutingModule,
+    VendedoresRoutingModule,
     HttpClientModule,
     CommonModule,
     ReactiveFormsModule,
@@ -25,4 +25,4 @@ import { JsonPlaceholderService } from '../../shared/services/jsonplaceholder.se
     JsonPlaceholderService
   ]
 })
-export class ProdutosModule { }
+export class VendedoresModule { }

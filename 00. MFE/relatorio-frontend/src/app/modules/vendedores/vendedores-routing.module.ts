@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { FiltroVendedoresPageComponent } from './pages/filtro-vendedores-page/filtro-vendedores-page.component';
 
-import { FiltroProdutosPageComponent } from './pages/filtro-produtos-page/filtro-produtos-page.component';
 
 const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    component: FiltroProdutosPageComponent,
+    title: 'Vendedores - Relatório',
+    component: FiltroVendedoresPageComponent,
   },
 ];
 
@@ -15,4 +16,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class ProdutosRoutingModule {}
+export class VendedoresRoutingModule {}

@@ -9,27 +9,27 @@
           <i class="pi pi-angle-right text-500 line-height-3"></i>
         </li>
         <li>
-          <span class="text-900 line-height-3">Produtos</span>
+          <span class="text-900 line-height-3">Vendedores</span>
         </li>
       </ul>
       <div class="flex align-items-start flex-column lg:justify-content-between lg:flex-row my-5">
         <div>
-          <div class="font-medium text-3xl text-900 mb-5">Produtos</div>
-          <p-table [value]="product" [tableStyle]="{ 'min-width': '50rem' }">
+          <div class="font-medium text-3xl text-900 mb-5">Vendedores</div>
+          <p-table [value]="posts" [tableStyle]="{ 'min-width': '50rem' }">
             <ng-template pTemplate="header">
               <tr>
                 <th>Id</th>
                 <th>Name</th>
                 <th>Categoria</th>
-                <th>Quantidade</th>
+                <th>Descrição</th>
               </tr>
             </ng-template>
-            <ng-template pTemplate="body" let-product>
+            <ng-template pTemplate="body" let-post>
               <tr>
-                <td>{{ product.id }}</td>
-                <td>{{ product.title }}</td>
-                <td>{{ product.userId }}</td>
-                <td>{{ product.body }}</td>
+                <td>{{ post.id }}</td>
+                <td>{{ post.title }}</td>
+                <td>{{ post.userId }}</td>
+                <td>{{ post.body }}</td>
               </tr>
             </ng-template>
           </p-table>

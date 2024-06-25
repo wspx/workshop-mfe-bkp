@@ -9,29 +9,33 @@
           <i class="pi pi-angle-right text-500 line-height-3"></i>
         </li>
         <li>
-          <span class="text-900 line-height-3">Segmentos</span>
+          <span class="text-900 line-height-3">Clientes Ativos</span>
         </li>
       </ul>
       <div class="flex align-items-start flex-column lg:justify-content-between lg:flex-row my-5">
         <div>
-          <div class="font-medium text-3xl text-900 mb-5">Segmentos</div>
-          <p-table [value]="segmentos" [tableStyle]="{ 'min-width': '50rem' }">
+          <div class="font-medium text-3xl text-900 mb-5">Clientes Ativos</div>
+          <p-table [value]="users" [tableStyle]="{ 'min-width': '50rem' }">
             <ng-template pTemplate="header">
               <tr>
+                <th>Foto</th>
                 <th>Id</th>
                 <th>Nome</th>
-                <th>Categoria</th>
-                <th>Descrição</th>
-                <th>Responsavel</th>
+                <th>Nome Sistema</th>
+                <th>Email</th>
+                <th>Site</th>
+                <th>Telefone</th>
               </tr>
             </ng-template>
-            <ng-template pTemplate="body" let-segmento>
+            <ng-template pTemplate="body" let-user>
               <tr>
-                <td>{{ segmento.id }}</td>
-                <td>{{ segmento.name }}</td>
-                <td>{{ segmento.postId }}</td>
-                <td>{{ segmento.body }}</td>
-                <td>{{ segmento.email }}</td>
+                <td><img src="https://via.placeholder.com/150/92c952"></td>
+                <td>{{ user.id }}</td>
+                <td>{{ user.name }}</td>
+                <td>{{ user.username }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.website }}</td>
+                <td>{{ user.phone }}</td>
               </tr>
             </ng-template>
           </p-table>

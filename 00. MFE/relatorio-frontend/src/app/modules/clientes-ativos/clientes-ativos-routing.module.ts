@@ -1,13 +1,14 @@
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { FiltroSegmentosPageComponent } from './pages/filtro-segmentos-page/filtro-segmentos-page.component';
 
+import { FiltroClientesAtivosPageComponent } from './pages/filtro-segmentos-page/filtro-clientes-ativos-page.component';
 
 const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    component: FiltroSegmentosPageComponent
+    title: 'Clientes Ativos - Relatório',
+    component: FiltroClientesAtivosPageComponent
   }
 ];
 
@@ -15,4 +16,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class SegmentosRoutingModule {}
+export class ClientesAtivosRoutingModule {}
