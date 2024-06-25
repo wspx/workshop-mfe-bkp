@@ -7,7 +7,7 @@ const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    title: 'Dashboard',
+    title: 'Produto - Dashboard',
     component: DashboardPageComponent
   },
 ];
